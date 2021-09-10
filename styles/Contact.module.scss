@@ -1,0 +1,129 @@
+@import "../styles/style-variables/index.module";
+
+.container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+    display: block;
+  }
+
+  .title {
+    width: 100%;
+    padding: $spacing20 0 $spacing15 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .textBold {
+      font-size: $size8;
+      font-weight: $font-bold;
+      padding-bottom: $spacing27;
+
+      @include respond-to($breakpoint: "md") {
+        padding: $spacing29 0 $spacing30 0;
+        font-size: $size10;
+      }
+    }
+
+    .text {
+      width: 80%;
+      opacity: 60%;
+      font-size: $size2;
+      text-align: center;
+
+      @include respond-to($breakpoint: "md") {
+        font-size: $size4;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: $spacing31;
+
+    @include respond-to($breakpoint: "md") {
+      padding-top: $spacing2;
+      flex-direction: row;
+      width: auto;
+    }
+
+    .leftSection {
+      width: 100%;
+
+      @include respond-to($breakpoint: "md") {
+        width: 70%;
+      }
+
+      .leftImage {
+        width: 240px;
+        height: 210px;
+
+        @include respond-to($breakpoint: "md") {
+          width: 509px;
+          height: 330px;
+        }
+      }
+    }
+
+    .rightSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: $spacing15;
+
+      @include respond-to($breakpoint: "md") {
+        padding-top: $spacing21;
+        width: 35%;
+      }
+
+      .linkContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: $spacing11 0 $spacing11 0;
+
+        .mailLogo {
+          width: 16px;
+          height: 16px;
+        }
+
+        .paperLogo {
+          width: 14px;
+          height: 14px;
+        }
+
+        .locationLogo {
+          width: 16px;
+          height: 16px;
+        }
+
+        .subtractLogo {
+          width: 13px;
+          height: 13px;
+        }
+
+        .inLogo {
+          width: 13px;
+          height: 13px;
+        }
+
+        .linkStyle {
+          padding-left: $spacing32;
+          font-size: $size2;
+
+          @include respond-to($breakpoint: "md") {
+            font-size: $spacing33;
+          }
+        }
+      }
+    }
+  }
+}

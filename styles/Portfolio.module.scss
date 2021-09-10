@@ -1,0 +1,78 @@
+@import "../styles//style-variables/index.module.scss";
+
+.titleContainer {
+  width: auto;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+  }
+
+  .title {
+    width: $spacing31;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 $spacing37 0;
+    align-items: center;
+
+    @include respond-to($breakpoint: "md") {
+      width: auto;
+      align-items: flex-start;
+    }
+
+    .textBold {
+      font-size: $size8;
+      font-weight: $font-bold;
+      padding-top: $spacing20;
+
+      @include respond-to($breakpoint: "md") {
+        font-size: $size10;
+        padding-top: $spacing18;
+      }
+    }
+
+    .text {
+      opacity: 80%;
+      font-size: $size2;
+      text-align: center;
+
+      @include respond-to($breakpoint: "md") {
+        font-size: $size4;
+        padding-top: $spacing36;
+      }
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+  }
+  
+  
+  .contentImage {
+    width: 844px;
+    
+    @include respond-to($breakpoint: "md") {
+      height: 364px;
+      width: 960px;
+    }
+  }
+
+}
+
+.buttonContainer {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: $spacing38;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+    padding-top: $spacing17;
+  }
+}

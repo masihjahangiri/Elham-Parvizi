@@ -1,0 +1,135 @@
+@import "../styles/style-variables/index.module";
+
+.container {
+  width: auto;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: $spacing24;
+
+    @include respond-to($breakpoint: "md") {
+      padding-top: $spacing28;
+    }
+
+    .leftSection {
+      width: $spacing25;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @include respond-to($breakpoint: "md") {
+        width: 50%;
+        display: block;
+      }
+
+      .leftImage {
+        width: 120px;
+        height: 120px;
+
+        @include respond-to($breakpoint: "md") {
+          width: 159px;
+          height: 160px;
+        }
+      }
+
+      .title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: $spacing26;
+
+        @include respond-to($breakpoint: "md") {
+          display: none;
+        }
+
+        .innerTextYellow {
+          font-size: $size9;
+          font-weight: $font-bold;
+          font-style: italic;
+
+          .color {
+            color: #eab308;
+          }
+        }
+        .innerTextBlack {
+          font-size: $size4;
+          font-weight: $font-normal;
+          margin-top: $spacing1;
+        }
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include respond-to($breakpoint: "md") {
+          padding: $spacing2 0 0 $spacing7;
+        }
+
+        .textBold {
+          font-size: $size8;
+          font-weight: $font-bold;
+          margin: $spacing20 0 $spacing27 0;
+
+          @include respond-to($breakpoint: "md") {
+            font-size: $size10;
+          }
+        }
+
+        @include respond-to($breakpoint: "md") {
+          display: block;
+        }
+
+        .innerDescription {
+          font-weight: $font-normal;
+          font-size: $size2;
+          text-align: center;
+          line-height: $spacing4;
+
+          @include respond-to($breakpoint: "md") {
+            font-size: $size4;
+          }
+
+          @include respond-to($breakpoint: "md") {
+            text-align: left;
+          }
+        }
+
+        .buttonContainer {
+          margin-top: $spacing9;
+
+          @include respond-to($breakpoint: "md") {
+            margin-top: $spacing13;
+          }
+        }
+      }
+    }
+
+    .rightSection {
+      display: none;
+
+      @include respond-to($breakpoint: "md") {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .rightImage {
+        height: 385px;
+        width: 411px;
+      }
+    }
+  }
+}

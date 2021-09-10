@@ -1,0 +1,100 @@
+@import "../styles/style-variables/index.module.scss";
+
+.container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: $spacing31;
+    padding-top: $spacing3;
+
+    @include respond-to($breakpoint: "md") {
+      padding-top: $spacing34;
+      flex-direction: row;
+      width: auto;
+    }
+
+    .leftSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include respond-to($breakpoint: "md") {
+        width: 50%;
+        display: block;
+      }
+
+      .title {
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+        font-size: $size8;
+        font-weight: $font-bold;
+        padding-top: $size10;
+
+        @include respond-to($breakpoint: "md") {
+          width: 50%;
+          display: flex;
+          font-size: $size9;
+        }
+      }
+
+      .buttonContainer {
+        margin-top: $spacing35;
+        display: flex;
+        justify-content: center;
+
+        @include respond-to($breakpoint: "md") {
+          margin-top: $spacing13;
+          display: block;
+        }
+      }
+
+      .text {
+        opacity: 80%;
+        line-height: $spacing2;
+        font-size: $size2;
+        font-weight: $font-normal;
+        text-align: center;
+
+        @include respond-to($breakpoint: "md") {
+          text-align: left;
+          font-size: $size4;
+          line-height: $spacing4;
+          padding-top: $spacing36;
+        }
+      }
+    }
+
+    .rightSection {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .rightImage {
+        width: 211px;
+        height: 277px;
+        
+        @include respond-to($breakpoint: "md") {
+          width: 278px;
+          height: 348px;
+        }
+      }
+
+      @include respond-to($breakpoint: "md") {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,428 @@
+@import "../styles/style-variables/index.module";
+
+@mixin chart {
+  height: $spacing7;
+  background-color: black;
+  opacity: 90%;
+}
+
+@mixin boldText {
+  font-size: $size8;
+  font-weight: $font-bold;
+  margin-top: $spacing4;
+}
+
+@mixin titleText {
+  font-size: $size4;
+  font-weight: $font-bold;
+}
+
+.container {
+  width: $spacing41;
+
+  @include respond-to($breakpoint: "md") {
+    width: 50rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; //
+    padding-top: $spacing42;
+
+    @include respond-to($breakpoint: "md") {
+      padding-top: $spacing43;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .text1 {
+      display: block;
+      font-size: $size9;
+      font-weight: $font-bold;
+      font-style: italic;
+      padding-bottom: $spacing13;
+
+      @include respond-to($breakpoint: "md") {
+        display: none;
+      }
+
+      .color {
+        color: #eab308;
+      }
+    }
+
+    .titleText {
+      display: none;
+
+      @include respond-to($breakpoint: "md") {
+        display: block;
+        color: #eab308;
+        font-weight: $font-normal;
+        font-style: italic;
+        font-size: $spacing43;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .imageContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      @include respond-to($breakpoint: "md") {
+        width: 30%;
+      }
+
+      .image {
+        width: 120px;
+        height: 120px;
+
+        @include respond-to($breakpoint: "md") {
+          width: 159px;
+          height: 160px;
+        }
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing13 0 $spacing13 0;
+
+    @include respond-to($breakpoint: "md") {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .headerContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin-bottom: $spacing46;
+
+      @include respond-to($breakpoint: "md") {
+        margin-bottom: 0px;
+        width: 30%;
+        font-size: $size10;
+      }
+
+      .boldText {
+        font-size: $size5;
+        font-weight: $font-bold;
+        margin-bottom: $spacing11;
+
+        @include respond-to($breakpoint: "md") {
+          font-size: $size10;
+        }
+      }
+
+      .titleText {
+        margin-bottom: $spacing30;
+        font-size: $size3;
+
+        @include respond-to($breakpoint: "md") {
+          font-size: $size4;
+        }
+      }
+    }
+
+    .logoContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      @include respond-to($breakpoint: "md") {
+        align-items: flex-start;
+        width: 30%;
+      }
+
+      .logo {
+        height: $spacing47;
+        width: $spacing47;
+        background-color: white;
+        border: $border3 black solid;
+        border-radius: $border2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include respond-to($breakpoint: "md") {
+          height: $spacing48;
+          width: $spacing48;
+        }
+
+        .colorLogo {
+          width: 22px;
+          height: 24px;
+
+          @include respond-to($breakpoint: "md") {
+            height: 32px;
+            width: 32px;
+          }
+        }
+
+        .academicLogo {
+          width: 24px;
+          height: 24px;
+
+          @include respond-to($breakpoint: "md") {
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+
+      .logoText {
+        font-size: $size6;
+        font-weight: $font-bold;
+        margin-top: $spacing3;
+
+        @include respond-to($breakpoint: "md") {
+          margin-top: $spacing4;
+          font-size: $size8;
+        }
+      }
+    }
+  }
+
+  .skillContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    line-height: $spacing44;
+    justify-content: space-between;
+
+    @include respond-to($breakpoint: "md") {
+      width: 45%;
+      line-height: $spacing35;
+      justify-content: flex-start;
+    }
+
+    .leftSection {
+      font-size: $size3;
+      width: auto;
+
+      @include respond-to($breakpoint: "md") {
+        width: 50%;
+        font-size: $size5;
+      }
+    }
+
+    .rightSection {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      @include respond-to($breakpoint: "md") {
+        width: 50%;
+      }
+
+      .chartContainer {
+        width: $spacing49;
+        height: $spacing7;
+        background-color: #9a9c95;
+        display: flex;
+        align-items: center;
+
+        @include respond-to($breakpoint: "md") {
+          width: $spacing50;
+          height: $spacing27;
+        }
+
+        .chart1 {
+          width: $spacing51;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing53;
+          }
+        }
+        .chart2 {
+          width: $spacing54;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing55;
+          }
+        }
+        .chart3 {
+          width: $spacing34;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing56;
+          }
+        }
+        .chart4 {
+          width: $spacing57;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing59;
+          }
+        }
+        .chart5 {
+          width: $spacing58;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing46;
+          }
+        }
+        .chart6 {
+          width: $spacing51;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing60;
+          }
+        }
+        .chart7 {
+          width: $spacing34;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing59;
+          }
+        }
+        .chart8 {
+          width: $spacing34;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing61;
+          }
+        }
+        .chart9 {
+          width: $spacing51;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: $spacing62;
+          }
+        }
+        .chart10 {
+          width: $spacing14;
+          @include chart;
+
+          @include respond-to($breakpoint: "md") {
+            width: 140px;
+          }
+        }
+        .dot {
+          background-color: black;
+          height: $spacing11;
+          width: $spacing11;
+          border-radius: $border4;
+          opacity: 90%;
+
+          @include respond-to($breakpoint: "md") {
+            height: $spacing52;
+          }
+        }
+      }
+    }
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    grid-gap: $spacing18;
+    column-gap: $spacing45;
+    row-gap: $spacing13;
+    justify-content: center;
+
+    @include respond-to($breakpoint: "md") {
+      grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+      row-gap: $spacing45;
+    }
+
+    .resumeItem {
+      display: flex;
+      flex-direction: column;
+      line-height: $spacing22;
+      font-size: $size3;
+
+      .width {
+        width: 100%;
+
+        @include respond-to($breakpoint: "md") {
+          width: 70%;
+        }
+      }
+
+      .boldText {
+        font-size: $size5;
+        font-weight: $font-bold;
+
+        @include respond-to($breakpoint: "md") {
+          padding-bottom: $spacing38;
+          @include boldText;
+        }
+      }
+
+      .titleText {
+        @include titleText;
+
+        @include respond-to($breakpoint: "md") {
+          padding-bottom: $spacing37;
+        }
+      }
+    }
+  }
+
+  .education {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    grid-gap: $spacing18;
+    column-gap: $spacing45;
+    row-gap: $spacing45;
+
+    .educationItem {
+      display: flex;
+      flex-direction: column;
+      line-height: $spacing44;
+      font-size: $size3;
+
+      @include respond-to($breakpoint: "md") {
+        line-height: $spacing35;
+      }
+
+      .boldText {
+        font-size: $size5;
+        font-weight: $font-bold;
+
+        @include respond-to($breakpoint: "md") {
+          @include boldText;
+        }
+      }
+
+      .titleText {
+        font-size: $size4;
+        font-weight: $font-bold;
+      }
+    }
+  }
+
+  .buttonContainer {
+    padding: $spacing13 0 $spacing13 0;
+    display: flex;
+    justify-content: center;
+
+    @include respond-to($breakpoint: "md") {
+      margin: $spacing40 0 $spacing36 0;
+      justify-content: flex-end;
+    }
+  }
+}

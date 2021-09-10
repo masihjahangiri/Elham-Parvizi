@@ -1,0 +1,14 @@
+@import "../../styles/style-variables/index.module.scss";
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: $border1;
+    font-family: "Times New Roman", Times, serif;
+    height: 100%;
+    width: 100%;
+}
