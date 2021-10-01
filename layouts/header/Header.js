@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <h2 className={styles.title}>Ui/Ux Designer</h2>
+      <h2 className={styles.title}><a href="/">Ui/Ux <span className="yellow">Designer</span></a></h2>
       <div className={styles.headerLinks}>
         {router.pathname !== '/' ?
           <Link href="/">
