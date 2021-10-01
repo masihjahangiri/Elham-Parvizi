@@ -49,11 +49,13 @@
   overflow-y: hidden;
   white-space: nowrap;
   img {
+    height: 364px;
     width: auto;
   }
 
   @include respond-to($breakpoint: "lg") {
     img {
+      height: auto;
       width: 100%;
     }
   }
