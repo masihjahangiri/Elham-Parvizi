@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <h2 className={styles.title}><a href="/">Ui/Ux <span className="yellow">Designer</span></a></h2>
-      <div className={styles.headerLinks}>
+      <div className={`${styles.headerLinks} ${router.pathname !== '/' ? styles.fourChild : styles.threeChild}`}>
         {router.pathname !== '/' ?
           <Link href="/">
             <a className={styles.headerLink, router.pathname === '/' && styles.active}>Home</a>

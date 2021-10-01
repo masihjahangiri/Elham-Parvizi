@@ -30,21 +30,40 @@
 
 
   .headerLinks {
-    margin-left: -32px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
     display: flex;
     align-items: center;
 
-    a {
-      margin-left: 32px;
+    &.fourChild {
+      margin-left: -20px;
+      a {
+        margin-left: 20px;
+      }
+  
+      @include respond-to($breakpoint: 'md') {
+        margin-left: -32px;
+        a {
+          margin-left: 32px;
+        }
+      }
+    }
+    &.threeChild {
+      margin-left: -32px;
+      a {
+        margin-left: 32px;
+      }
+  
+      @include respond-to($breakpoint: 'md') {
+        font-size: 14px;
+        a {
+          margin-left: 32px;
+        }
+      }
     }
 
     @include respond-to($breakpoint: 'md') {
       font-size: 14px;
-      a {
-        margin-left: 32px;
-      }
     }
 
     .headerLink {
