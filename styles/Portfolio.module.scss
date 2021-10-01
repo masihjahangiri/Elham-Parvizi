@@ -55,7 +55,6 @@
 
   @include respond-to($breakpoint: "lg") {
     img {
-      height: auto;
       width: 100%;
     }
   }
