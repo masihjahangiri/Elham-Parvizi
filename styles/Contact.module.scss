@@ -78,6 +78,7 @@
       flex-direction: column;
       justify-content: center;
       padding-top: $spacing15;
+      align-self: end;
 
       @include respond-to($breakpoint: "md") {
         padding-top: $spacing21;
