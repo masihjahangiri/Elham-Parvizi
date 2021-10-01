@@ -106,7 +106,9 @@
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
+      text-align: center;
       width: 100%;
+
       margin-bottom: $spacing46;
 
       @include respond-to($breakpoint: "md") {
@@ -128,6 +130,7 @@
       .titleText {
         margin-bottom: $spacing30;
         font-size: $size3;
+        width: 100%;
 
         @include respond-to($breakpoint: "md") {
           font-size: $size4;
