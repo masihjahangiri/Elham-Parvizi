@@ -24,30 +24,30 @@ function Contact() {
             <img className={styles.leftImage} src={require('../public/group159.png')} />
           </div>
           <div className={styles.rightSection}>
-            <div className={styles.linkContainer}>
+            <a href="mailto: e.parvizii.67@gmail.com" className={styles.linkContainer}>
               <img className={styles.mailLogo} src={require('../public/mail.svg')} />
               <span className={styles.linkStyle}>e.parvizii.67@gmail.com</span>
-            </div>
-            <div className={styles.linkContainer}>
+            </a>
+            <a href="https://t.me/Eli4462" className={styles.linkContainer}>
               <img className={styles.paperLogo} src={require('../public/paper-airplane.svg')} />
-              <span className={styles.linkStyle}>@elham parvizi</span>
-            </div>
-            <div className={styles.linkContainer}>
+              <span className={styles.linkStyle}>@Eli4462</span>
+            </a>
+            <a href="tel:+989120195321" className={styles.linkContainer}>
               <img className={styles.phoneLogo} src={require('../public/phone.svg')} />
               <span className={styles.linkStyle}>09120195321</span>
-            </div>
-            <div className={styles.linkContainer}>
+            </a>
+            <a className={styles.linkContainer}>
               <img className={styles.locationLogo} src={require('../public/location-marker.svg')} />
               <span className={styles.linkStyle}>Iran, Tehran</span>
-            </div>
-            <div className={styles.linkContainer}>
+            </a>
+            <a href="https://dribbble.com/elhamparvizi" className={styles.linkContainer}>
               <img className={styles.subtractLogo} src={require('../public/subtract.svg')} />
-              <span className={styles.linkStyle}>https://dribbble.com/elhamparvizi/boosts</span>
-            </div>
-            <div className={styles.linkContainer}>
+              <span className={styles.linkStyle}>dribbble.com/elhamparvizi</span>
+            </a>
+            <a href="https://www.linkedin.com/in/elham-parvizi" className={styles.linkContainer}>
               <img className={styles.inLogo} src={require('../public/in.svg')} />
-              <span className={styles.linkStyle}>https://dribbble.com/elhamparvizi/boosts</span>
-            </div>
+              <span className={styles.linkStyle}>linkedin.com/in/elham-parvizi</span>
+            </a>
           </div>
         </div>
       </div>

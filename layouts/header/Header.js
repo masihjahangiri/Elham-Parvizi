@@ -16,14 +16,14 @@ function Header() {
             <a className={styles.headerLink, router.pathname === '/' && styles.active}>Home</a>
           </Link> : null
         }
-        <Link href="/contact">
-          <a className={styles.headerLink, router.pathname === '/contact' && styles.active}>Contact Me</a>
-        </Link>
         <Link href="/about">
           <a className={styles.headerLink, router.pathname === '/about' && styles.active}>About Me</a>
         </Link>
+        <Link href="/contact">
+          <a className={styles.headerLink, router.pathname === '/contact' && styles.active}>Contact Me</a>
+        </Link>
         <Link href="/portfolio">
-          <a className={styles.headerLink, router.pathname === '/portfolio' && styles.active}>My Portfolio</a>
+          <a className={styles.headerLink, router.pathname === '/portfolio' && styles.active}>Portfolio</a>
         </Link>
       </div>
     </header>

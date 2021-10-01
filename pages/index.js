@@ -20,7 +20,7 @@ export default function Home() {
           <div className={styles.leftSection}>
             <div className={styles.title}>
               <span className={styles.innerTextYellow}>Ui / Ux <span className={styles.color}>Designer</span></span>
-              <span className={styles.innerTextBlack}>and psycologest</span>
+              <span className={styles.innerTextBlack}>And Psycologest</span>
             </div>
             <img className={styles.leftImage} src={require('../public/group215.png')} />
             <div className={styles.description}>

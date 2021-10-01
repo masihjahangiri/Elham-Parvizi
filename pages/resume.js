@@ -29,7 +29,7 @@ function Resume() {
           </div>
           <div className={styles.headerContent}>
             <span className={styles.boldText}>Elham Parvizi</span>
-            <span className={styles.titleText}>ui / ux designer and psycologest </span>
+            <span className={styles.titleText}>Ui / Ux Designer And Psychologist</span>
             <Button href='/about' title='About Me' />
           </div>
         </div>
@@ -226,10 +226,6 @@ function Resume() {
             <span className={styles.boldText}>Islamic Azad University</span>
             <span className={styles.titleText}>Masters, Psychology</span>
             <span>Graduated with a GPA of 19.30</span>
-          </div>
-          <div className={styles.educationItem}>
-            <span className={styles.boldText}>Islamic Azad University</span>
-            <span>Doctorate (PHD), Psychology ---</span>
           </div>
         </div>
         <div className={styles.buttonContainer}>

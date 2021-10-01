@@ -8,8 +8,8 @@
   }
 
   .title {
-    width: $spacing31;
     display: flex;
+    width: 247px;
     flex-direction: column;
     padding: 0 0 $spacing37 0;
     align-items: center;
@@ -34,7 +34,7 @@
       opacity: 80%;
       font-size: $size2;
       text-align: center;
-
+      margin-top: 16px;
       @include respond-to($breakpoint: "md") {
         font-size: $size4;
         padding-top: $spacing36;
@@ -48,31 +48,26 @@
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-
-  @include respond-to($breakpoint: "md") {
-    width: 50rem;
+  img {
+    width: auto;
   }
-  
-  
-  .contentImage {
-    width: 844px;
-    
-    @include respond-to($breakpoint: "md") {
-      height: 364px;
-      width: 960px;
+
+  @include respond-to($breakpoint: "lg") {
+    img {
+      width: 100%;
     }
   }
-
 }
 
 .buttonContainer {
   width: auto;
   display: flex;
   justify-content: flex-end;
-  padding-top: $spacing38;
+  padding-top: 23px;
 
   @include respond-to($breakpoint: "md") {
-    width: 50rem;
+    width: 100%;
+    margin-right: 80px;
     padding-top: $spacing17;
   }
 }
