@@ -32,7 +32,6 @@ a {
 @media only screen and (max-width: 900px) {
   /* For tablets: */
   #__next  {
-    height: auto;
     padding: 16px;
   }
 }
