@@ -25,11 +25,11 @@ function Portfolio() {
       </div>
       <div className={styles.content}>
         <picture className={styles.contentImage}>
-          <source media="(min-width:1024px)" srcset={require("../public/frame-50-desktop.svg")} />
-          <source media="(min-width:320px)" srcset={require("../public/frame-50.svg")} />
+          <source media="(min-width:1024px)" srcset={require("../public/frame-50-desktop.jpg")} />
+          <source media="(min-width:320px)" srcset={require("../public/frame-50.jpg")} />
           <img
             className={styles.contentImage}
-            src={require("../public/frame-50.svg")}
+            src={require("../public/frame-50.jpg")}
           />
         </picture>
       </div>
